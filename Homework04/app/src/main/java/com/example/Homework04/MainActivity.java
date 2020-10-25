@@ -30,6 +30,7 @@ import com.example.Homework04.database.UserDBHelper;
 import com.example.Homework04.util.DateUtil;
 import com.example.Homework04.util.ViewUtil;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnFocusChangeListener {
 
     private RadioGroup rg_login; // 声明一个单选组对象
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText et_password; // 声明一个编辑框对象
     private Button btn_forget; // 声明一个忘记密码按钮控件对象
     private Button btn_login; // 声明一个登录按钮控件对象
-    private CheckBox ck_remember; // 声明一个复选框对象
+    private Switch ck_remember; // 声明一个复选框对象
 
     private int mRequestCode = 0; // 跳转页面时的请求代码
     private int mType = 2; // 用户类型
@@ -52,7 +53,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private UserDBHelper mHelper; // 声明一个用户数据库的帮助器对象
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         et_password = findViewById(R.id.et_password);
         btn_forget = findViewById(R.id.btn_forget);
         btn_login = findViewById(R.id.btn_login);
-        ck_remember = (CheckBox) findViewById(R.id.ck_remember);
+        ck_remember = findViewById(R.id.ck_remember);
 
         // 给rg_login设置单选监听器
         rg_login.setOnCheckedChangeListener(new RadioListener());
