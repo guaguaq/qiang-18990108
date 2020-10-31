@@ -190,7 +190,7 @@
 
         android:layout_marginRight="10dp"
 
-        android:text="注册"
+        android:text="注册成功,保存到SQLite数据库"
 
         android:textSize="17sp"
 

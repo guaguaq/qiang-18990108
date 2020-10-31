@@ -15,11 +15,11 @@
             android:exported="true">
 
         </activity>
-
         <activity
-
+            android:name=".SQLiteReadActivity"
+            android:exported="true" />
+        <activity
             android:name="com.example.homework05.LoginForgetActivity"
-
             android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>

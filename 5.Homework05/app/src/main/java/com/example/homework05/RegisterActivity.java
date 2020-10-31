@@ -184,7 +184,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
             }
 
-            Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "注册成功,数据已写入SQLite数据库", Toast.LENGTH_SHORT).show();
 
             // 执行数据库帮助器的插入操作
 
